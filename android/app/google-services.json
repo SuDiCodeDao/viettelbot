@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "736732828344",
+    "project_id": "viettelbot-e98ed",
+    "storage_bucket": "viettelbot-e98ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736732828344:android:3a5e44fc58b2e145959a4d",
+        "android_client_info": {
+          "package_name": "com.app.viettelbot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuRTGnt7rH_ZGicKxuOW0-c6p3RLH5GdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
