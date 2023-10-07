@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-class ArrowButton extends StatelessWidget {
+class ButtonWidget extends StatelessWidget {
   final VoidCallback onPressed;
-  final String buttonText;
+  final String text;
+  final IconData? icon;
 
-  const ArrowButton(
-      {Key? key, required this.onPressed, required this.buttonText})
+  const ButtonWidget(
+      {Key? key, required this.onPressed, required this.text, this.icon})
       : super(key: key);
 
   @override
@@ -26,7 +27,7 @@ class ArrowButton extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            buttonText,
+            text,
             style: const TextStyle(
               fontWeight: FontWeight.bold,
             ),

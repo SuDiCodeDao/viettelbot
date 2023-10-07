@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:viettelbot/src/app/pages/login_page/components/body.dart';
 
 import '../../controllers/login_controller.dart';
+import 'widgets/login_page_body_widget.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({
@@ -12,9 +12,11 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final loginController = Get.put(LoginController());
-    return Body(
-      loginController: loginController,
+    Get.put(LoginController());
+    return const SafeArea(
+      child: Scaffold(
+        body: LoginPageBodyWidget(),
+      ),
     );
   }
 }
