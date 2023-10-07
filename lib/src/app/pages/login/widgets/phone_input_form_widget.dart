@@ -17,16 +17,16 @@ class PhoneInputFormWidget extends StatelessWidget {
   final IconData? icon;
   final TextEditingController controller;
   final Country selectedCountry = Country(
-      phoneCode: "+84",
-      countryCode: "VN",
+      phoneCode: '+84',
+      countryCode: 'VN',
       e164Sc: 0,
       geographic: true,
       level: 1,
-      name: "Việt Nam",
-      example: "Việt Nam",
-      displayName: "Việt Nam",
-      displayNameNoCountryCode: "VN",
-      e164Key: "");
+      name: 'Việt Nam',
+      example: 'Việt Nam',
+      displayName: 'Việt Nam',
+      displayNameNoCountryCode: 'VN',
+      e164Key: '');
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +59,7 @@ class PhoneInputFormWidget extends StatelessWidget {
           child: InkWell(
             onTap: () {},
             child: Text(
-              "${selectedCountry.flagEmoji}  ${selectedCountry.phoneCode}",
+              '${selectedCountry.flagEmoji}  ${selectedCountry.phoneCode}',
               style: TextStyle(
                   fontSize: 16.sp,
                   color: Colors.black,

@@ -18,8 +18,8 @@ class OTPPageBodyWidget extends GetWidget {
         child: Column(
           children: [
             const HeaderWidget(
-                imagePath: "assets/images/otp_authentication.png",
-                title: "Nhập mã OTP"),
+                imagePath: 'assets/images/otp_authentication.png',
+                title: 'Nhập mã OTP'),
             SizedBox(height: 20.h),
             const OTPFormWidget(),
             SizedBox(height: 20.h),

@@ -18,7 +18,7 @@ class LoginPageBodyWidget extends StatelessWidget {
         child: Column(
           children: [
             const HeaderWidget(
-                imagePath: "assets/images/human.png", title: "ĐĂNG NHẬP"),
+                imagePath: 'assets/images/human.png', title: 'ĐĂNG NHẬP'),
             SizedBox(
               height: 10.h,
             ),
@@ -26,7 +26,7 @@ class LoginPageBodyWidget extends StatelessWidget {
             SizedBox(
               height: 10.h,
             ),
-            LoginFormWidget(),
+            const LoginFormWidget(),
           ],
         ),
       ),

@@ -31,9 +31,9 @@ class AuthRepository extends GetxController {
         },
         verificationFailed: (e) {
           if (e.code == 'Số điện thoại không hợp lệ') {
-            Get.snackbar("Lỗi", "Số điện thoại bạn cung cấp không hợp lệ");
+            Get.snackbar('Lỗi', 'Số điện thoại bạn cung cấp không hợp lệ');
           } else {
-            Get.snackbar("Lỗi", "Có lỗi xảy ra. Thử lại");
+            Get.snackbar('Lỗi', 'Có lỗi xảy ra. Thử lại');
           }
         },
         codeSent: (verificationId, resendToken) {
@@ -45,7 +45,7 @@ class AuthRepository extends GetxController {
   }
 
   Future<bool> verifyOTP(String otp) async {
-    var credential = await _auth.signInWithCredential(
+    final credential = await _auth.signInWithCredential(
         PhoneAuthProvider.credential(
             verificationId: verificationId.value, smsCode: otp));
     return credential.user != null ? true : false;

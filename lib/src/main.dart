@@ -12,7 +12,7 @@ import 'app/routes/app_routes.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform)
-      .then((value) => Get.lazyPut(() => AuthRepository()));
+      .then((value) => Get.put(AuthRepository()));
   runApp(const MainApp());
 }
 

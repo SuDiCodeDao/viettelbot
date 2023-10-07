@@ -7,6 +7,7 @@ class LoginController extends GetxController {
   final TextEditingController phoneNumber = TextEditingController();
 
   void phoneAuthentication(String phoneNumber) {
-    AuthRepository.instance.phoneAuthentiation(phoneNumber);
+    final String formattedNumber = '+84$phoneNumber';
+    AuthRepository.instance.phoneAuthentiation(formattedNumber);
   }
 }

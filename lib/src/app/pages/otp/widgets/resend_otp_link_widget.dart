@@ -9,10 +9,10 @@ class ResendOTPLinkWidget extends StatelessWidget {
       TextSpan(
         children: [
           TextSpan(
-              text: "Không nhận được mã",
+              text: 'Không nhận được mã',
               style: TextStyle(fontSize: 16.sp, color: Colors.black)),
           const TextSpan(
-            text: " ",
+            text: ' ',
           ),
           TextSpan(
               style: TextStyle(
@@ -20,7 +20,7 @@ class ResendOTPLinkWidget extends StatelessWidget {
                   decoration: TextDecoration.underline,
                   fontSize: 16.sp,
                   color: Colors.red),
-              text: "Gửi lại ngay")
+              text: 'Gửi lại ngay')
         ],
       ),
     );
